@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E0E8FF;
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 0.2px;
+}
+h1 {
+    color: hsl(223, 47%, 23%);
+    line-height: 1.5;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: underline;
+    color: #382AE1;
+    font-weight: 700;
+}
+
+.button {
+    background-color: #382AE1;
+    border: none;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    transition: all;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0px 18px 22px rgba(56, 42, 225, 0.2);
+}
+.button:hover {
+    background-color: #766CF1;
+    box-shadow: 0px 18px 22px rgba(56, 42, 225, 0.4);
+}
+
+.page-wrapper {
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://iplaysite.com/_dev/fm_order_summary/imgs/pattern-background-desktop.svg);
+    background-position: 80% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card-wrapper {
+    /* margin: 0 auto; */
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    margin-top: 5rem;  
+    border-radius: 20px;
+    overflow: hidden; 
+    text-align: center;
+    box-shadow: 0px 27px 29px rgba(56, 42, 225, 0.15);
+}
+.hero-pic {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.card-content {
+    width: 100%;
+    padding: 30px 48px 30px 48px;
+    
+}
+.card-content p {
+    padding: 0 20px;
+}
+.offer-container {
+    width: 100%;
+    background-color: #F8F9FE;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+    margin-bottom: 30px;
+}
+.prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    font-size: 0.9rem;
+}
+.link:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+.plan {
+    margin-bottom: 0;
+}
+.plan span {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.bot-link {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.bot-link:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 375px) {
+    .page-wrapper {
+        padding: 0 25px;
+        background-image: url(https://iplaysite.com/_dev/fm_order_summary/imgs/pattern-background-desktop.svg);
+        background-position: 80% 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero-pic {
+        height: 160px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .card-content {
+        width: 100%;
+        padding: 30px 20px 20px 20px;
+        
+    }
+    .offer-container {
+        padding: 1rem;
+    }
+  }
