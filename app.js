@@ -1,6 +1,6 @@
 
 
-var tl = gsap.timeline({ defaults:{opacity:0, ease:"Power4.easeOut", duration:1}});
+var tl = gsap.timeline({ defaults:{opacity:0, ease:"Power4.easeInOut", duration:1}});
 gsap.set(".page-wrapper", {rotationY:15})
 function init() {
     tl.from(".page-wrapper", {ease:"linear", autoAlpha:0, y:50})
